@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Advogado Trabalhista em Maceió | PH Pontes Advocacia</title>
+
+  <meta name="description"
+        content="Advocacia trabalhista em Maceió. Orientação jurídica sobre rescisão, FGTS, horas extras, verbas trabalhistas e vínculo de emprego.">
+
+  <meta name="robots" content="index, follow">
+
+  <style>
+    :root {
+      --navy: #07111f;
+      --navy-2: #0c192a;
+      --gold: #d5ad6d;
+      --gold-light: #efd39a;
+      --white: #ffffff;
+      --off-white: #f7f6f2;
+      --text: #1b2430;
+      --muted: #68717d;
+      --border: #e5e1d8;
+      --whatsapp: #25D366;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.55;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: var(--navy);
+      border-bottom: 1px solid rgba(213, 173, 109, .25);
+    }
+
+    .header-content {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: white;
+    }
+
+    .brand img {
+      width: 58px;
+      height: 58px;
+      object-fit: contain;
+    }
+
+    .brand-name {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      letter-spacing: .4px;
+    }
+
+    .brand-subtitle {
+      display: block;
+      margin-top: 2px;
+      color: var(--gold-light);
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .header-phone {
+      color: white;
+      font-size: 14px;
+    }
+
+    .header-phone strong {
+      color: var(--gold-light);
+    }
+
+    /* HERO */
+
+    .hero {
+      background:
+        radial-gradient(circle at 75% 20%, rgba(213,173,109,.08), transparent 28%),
+        linear-gradient(135deg, #07111f 0%, #0b1727 100%);
+      color: white;
+      padding: 78px 0 82px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 500;
+      font-size: clamp(38px, 5vw, 61px);
+      line-height: 1.06;
+      margin-bottom: 24px;
+    }
+
+    h1 span {
+      color: var(--gold-light);
+    }
+
+    .hero-text {
+      max-width: 650px;
+      color: #d8dee6;
+      font-size: 18px;
+      margin-bottom: 32px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 24px;
+      border-radius: 5px;
+      font-weight: 700;
+      transition: .2s ease;
+    }
+
+    .btn-whatsapp {
+      background: var(--whatsapp);
+      color: #062e16;
+    }
+
+    .btn-whatsapp:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.04);
+    }
+
+    .btn-call {
+      color: white;
+      border: 1px solid rgba(255,255,255,.35);
+    }
+
+    .btn-call:hover {
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    .hero-card {
+      border: 1px solid rgba(213,173,109,.35);
+      background: rgba(255,255,255,.035);
+      padding: 35px;
+      border-radius: 10px;
+    }
+
+    .hero-card h2 {
+      color: var(--gold-light);
+      font-family: Georgia, serif;
+      font-size: 25px;
+      margin-bottom: 22px;
+    }
+
+    .hero-card ul {
+      list-style: none;
+    }
+
+    .hero-card li {
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,.09);
+      color: #e2e7ed;
+    }
+
+    .hero-card li:last-child {
+      border-bottom: 0;
+    }
+
+    .hero-card li::before {
+      content: "✓";
+      color: var(--gold);
+      margin-right: 10px;
+    }
+
+    /* SERVICES */
+
+    .services {
+      padding: 78px 0;
+      background: var(--off-white);
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 42px;
+    }
+
+    .section-heading small {
+      color: #9b753d;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+    }
+
+    .section-heading h2 {
+      margin-top: 8px;
+      font-family: Georgia, serif;
+      font-size: clamp(30px, 4vw, 42px);
+      color: var(--navy);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 27px;
+    }
+
+    .service-number {
+      color: #ad8244;
+      font-family: Georgia, serif;
+      font-size: 17px;
+      margin-bottom: 15px;
+    }
+
+    .service h3 {
+      color: var(--navy);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .service p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ABOUT */
+
+    .about {
+      padding: 78px 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .portrait {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      display: block;
+    }
+
+    .about h2 {
+      color: var(--navy);
+      font-family: Georgia, serif;
+      font-size: 38px;
+      margin-bottom: 18px;
+    }
+
+    .about p {
+      color: var(--muted);
+      margin-bottom: 17px;
+    }
+
+    .professional {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--navy) !important;
+      font-weight: 700;
+    }
+
+    /* CTA */
+
+    .cta {
+      background: var(--navy);
+      color: white;
+      padding: 67px 0;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(30px, 4vw, 43px);
+      margin-bottom: 14px;
+    }
+
+    .cta p {
+      color: #cfd6df;
+      max-width: 650px;
+      margin: 0 auto 27px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #040b13;
+      color: #9ea8b5;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: var(--gold-light);
+    }
+
+    .disclaimer {
+      margin-top: 9px;
+      font-size: 11px;
+      color: #788391;
+    }
+
+    /* WHATSAPP FIXO */
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: var(--whatsapp);
+      color: #063416;
+      padding: 14px 18px;
+      border-radius: 50px;
+      font-weight: 700;
+      box-shadow: 0 8px 25px rgba(0,0,0,.22);
+      z-index: 100;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+      .hero {
+        padding: 55px 0;
+      }
+
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header-phone {
+        display: none;
+      }
+
+      .hero-card {
+        padding: 25px;
+      }
+
+      .about-grid {
+        text-align: left;
+      }
+
+      .portrait {
+        max-width: 310px;
+        margin: 0 auto;
+      }
+
+      .floating-whatsapp {
+        right: 14px;
+        bottom: 14px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-content">
+
+    <div class="brand">
+      <img src="logo.png" alt="PH Pontes Advocacia">
+      <div>
+        <div class="brand-name">PH Pontes Advocacia</div>
+        <span class="brand-subtitle">Direito do Trabalho</span>
+      </div>
+    </div>
+
+    <a class="header-phone" href="tel:+5582991213400">
+      Atendimento: <strong>(82) 99121-3400</strong>
+    </a>
+
+  </div>
+</header>
+
+
+<main>
+
+<section class="hero">
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="eyebrow">Advocacia Trabalhista em Maceió</div>
+
+      <h1>
+        Orientação jurídica para seus
+        <span>direitos trabalhistas.</span>
+      </h1>
+
+      <p class="hero-text">
+        Atendimento jurídico individual para questões envolvendo
+        rescisão contratual, FGTS, horas extras, verbas trabalhistas
+        e relações de trabalho.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          class="btn btn-whatsapp"
+          href="https://wa.me/5582991213400?text=Ol%C3%A1%2C%20vim%20pelo%20Google%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20uma%20quest%C3%A3o%20trabalhista."
+          target="_blank"
+          rel="noopener">
+          Falar pelo WhatsApp
+        </a>
+
+        <a class="btn btn-call" href="tel:+5582991213400">
+          Ligar para o escritório
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="hero-card">
+
+      <h2>Como podemos orientar?</h2>
+
+      <ul>
+        <li>Problemas na rescisão contratual</li>
+        <li>FGTS não depositado</li>
+        <li>Horas extras e jornada de trabalho</li>
+        <li>Verbas trabalhistas não pagas</li>
+        <li>Trabalho sem registro</li>
+        <li>Análise individual da situação</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="services">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <small>Direito do Trabalho</small>
+      <h2>Principais questões atendidas</h2>
+    </div>
+
+    <div class="services-grid">
+
+      <article class="service">
+        <div class="service-number">01</div>
+        <h3>Rescisão Trabalhista</h3>
+        <p>
+          Análise das verbas decorrentes do encerramento
+          da relação de emprego.
+        </p>
+      </article>
+
+      <article class="service">
+        <div class="service-number">02</div>
+        <h3>FGTS</h3>
+        <p>
+          Orientação sobre ausência ou irregularidade
+          nos depósitos do FGTS.
+        </p>
+      </article>
+
+      <article class="service">
+        <div class="service-number">03</div>
+        <h3>Horas Extras</h3>
+        <p>
+          Análise da jornada de trabalho e de eventuais
+          horas extraordinárias.
+        </p>
+      </article>
+
+      <article class="service">
+        <div class="service-number">04</div>
+        <h3>Verbas Trabalhistas</h3>
+        <p>
+          Avaliação de férias, 13º salário, aviso-prévio
+          e demais parcelas trabalhistas.
+        </p>
+      </article>
+
+      <article class="service">
+        <div class="service-number">05</div>
+        <h3>Vínculo de Emprego</h3>
+        <p>
+          Orientação jurídica sobre trabalho realizado
+          sem o devido registro.
+        </p>
+      </article>
+
+      <article class="service">
+        <div class="service-number">06</div>
+        <h3>Análise do Caso</h3>
+        <p>
+          Atendimento individual mediante avaliação
+          dos fatos e documentos apresentados.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="about">
+
+  <div class="container about-grid">
+
+    <!-- Salve a foto enviada como advogado.jpg -->
+    <img
+      class="portrait"
+      src="advogado.jpg"
+      alt="Advogado do escritório PH Pontes Advocacia"
+      loading="lazy">
+
+    <div>
+
+      <div class="eyebrow" style="color:#9b753d">
+        Atendimento profissional
+      </div>
+
+      <h2>PH Pontes Advocacia</h2>
+
+      <p>
+        Atendimento jurídico pautado na análise individual de cada caso,
+        com comunicação objetiva e acompanhamento profissional.
+      </p>
+
+      <p>
+        O atendimento pode ser realizado presencialmente em Maceió
+        ou por meios digitais, mediante agendamento.
+      </p>
+
+      <p class="professional">
+        Paulo Henrique Maranhão Pontes<br>
+        Advogado – OAB/AL
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="cta">
+
+  <div class="container">
+
+    <h2>Precisa de orientação trabalhista?</h2>
+
+    <p>
+      Entre em contato com o escritório e apresente sua situação
+      para análise jurídica.
+    </p>
+
+    <a
+      class="btn btn-whatsapp"
+      href="https://wa.me/5582991213400?text=Ol%C3%A1%2C%20vim%20pelo%20Google%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20uma%20quest%C3%A3o%20trabalhista."
+      target="_blank"
+      rel="noopener">
+      Falar com o escritório
+    </a>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    <strong>PH Pontes Advocacia</strong><br>
+    Maceió – Alagoas | (82) 99121-3400
+
+    <div class="disclaimer">
+      As informações desta página possuem caráter informativo
+      e não representam promessa de resultado.
+    </div>
+
+  </div>
+
+</footer>
+
+
+<a
+  class="floating-whatsapp"
+  href="https://wa.me/5582991213400?text=Ol%C3%A1%2C%20vim%20pelo%20Google%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20uma%20quest%C3%A3o%20trabalhista."
+  target="_blank"
+  rel="noopener"
+  aria-label="Falar pelo WhatsApp">
+  WhatsApp
+</a>
+
+</body>
+</html>
