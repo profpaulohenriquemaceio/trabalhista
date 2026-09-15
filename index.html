@@ -29,6 +29,19 @@ function gtag_report_conversion(url) {
 }
 </script>
 
+  <script>
+  function registrarConversaoWhatsApp(url) {
+
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18328042209/5zy_CJzT6PgcEOH1vqNE'
+    });
+
+    window.open(url, '_blank');
+
+    return false;
+  }
+</script>
+
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -492,6 +505,7 @@ function gtag_report_conversion(url) {
         <a
           class="btn btn-whatsapp"
           href="https://wa.me/5582991213400?text=Ol%C3%A1%2C%20vim%20pelo%20Google%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20uma%20quest%C3%A3o%20trabalhista."
+          onclick="return gtag_report_conversion(this.href);"
           target="_blank"
           rel="noopener">
           Falar pelo WhatsApp
@@ -652,6 +666,7 @@ function gtag_report_conversion(url) {
     <a
       class="btn btn-whatsapp"
       href="https://wa.me/5582991213400?text=Ol%C3%A1%2C%20vim%20pelo%20Google%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20uma%20quest%C3%A3o%20trabalhista."
+      onclick="return gtag_report_conversion(this.href);"
       target="_blank"
       rel="noopener">
       Falar com o escritório
